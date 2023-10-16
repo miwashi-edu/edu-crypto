@@ -2,7 +2,7 @@
 
 ## Oneliner for Creating a Key for JWT
 
-> In gitbash or terminal
+> In gitbash or terminal, use it in .env
 
 ```bash
 node -e "console.log(require('crypto').randomBytes(256).toString('base64'));"
