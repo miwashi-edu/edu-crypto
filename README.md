@@ -39,3 +39,52 @@ bf({
   step: hack
 });
 ```
+  Hashing Terms and Concepts
+
+Hashing Terms and Concepts
+--------------------------
+
+### 1\. Hash Function
+
+**Hash Function**:
+
+*   A function that takes in an input (or 'message') and returns a fixed-size string, which typically looks random.
+*   The output is commonly referred to as the hash code or simply the hash.
+*   Any change to the input, even a minor one, will produce a significantly different hash.
+
+### 2\. Cryptographic Hash Function
+
+A special class of hash functions with specific properties making them suitable for use in cryptography. Features include:
+
+*   Irreversibility: It's computationally infeasible to generate the original input value given the hash output. This ensures confidentiality.
+*   Deterministic: The same input will always produce the same hash output.
+*   Fast to compute: Efficient computation of the hash value for any given input.
+*   Pre-image resistant: Given a hash, it's computationally difficult to find an input that hashes to that value.
+*   Collision resistant: It's hard to find two different inputs that produce the same hash.
+
+### 3\. Salting
+
+**Salting**:
+
+*   A technique used to safeguard passwords in storage.
+*   Random data (the salt) is generated and combined with the password before hashing.
+*   The salt is then stored with the hash, allowing the hash+salt combination to be verified against future login attempts.
+*   Salting ensures that even if two users have the same password, their hashes will be different due to the unique salts.
+
+### 4\. Rainbow Table
+
+**Rainbow Table**:
+
+*   A precomputed table used for reversing cryptographic hash functions.
+*   Designed to crack password hashes by looking up the hash in the table and, if found, the associated password is revealed.
+*   Salting hash functions can mitigate the effectiveness of rainbow tables.
+
+### 5\. Hash Algorithms
+
+Commonly used cryptographic hash algorithms include:
+
+*   MD5 (Message Digest Algorithm 5): Fast but considered insecure due to vulnerabilities.
+*   SHA-1 (Secure Hash Algorithm 1): Previously widely used, but now also considered insecure for many cryptographic purposes.
+*   SHA-256, SHA-384, and SHA-512: Part of the SHA-2 family, they're currently considered secure and are used in various security protocols and systems.
+
+_Hashing is a fundamental concept in computer science and cryptography. Properly understanding and implementing hashing techniques can be crucial for data integrity and security._
