@@ -49,12 +49,22 @@ try {
 
 ### Decoded JWT with iat (and exp when set)
 
-```json
-{
-  "foo": "bar",
+```js
+const payload = {
+    "foo": "bar",
   "iat": 1683895327,
   "exp": 1683908927
-}
+};
+
+// Convert the 'iat' value to a JavaScript Date object
+const issuedAtDate = new Date(payload.iat * 1000);
+
+// Convert the 'exp' value to a JavaScript Date object
+const expirationDate = new Date(payload.exp * 1000);
+
+// Log them out or use them as needed
+console.log(`Token was issued at: ${issuedAtDate}`);
+console.log(`Token will expire at: ${expirationDate}`);
 ```
 
 
