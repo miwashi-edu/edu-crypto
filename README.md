@@ -108,4 +108,36 @@ To create the **signature** for the JWT:
 *   **JWS (JSON Web Signature)**: Provides a mechanism to represent content secured with digital signatures or Message Authentication Codes (MACs) using JSON data structures.
 *   **JWE (JSON Web Encryption)**: Provides a mechanism to represent encrypted content using JSON data structures.
 
+
+
+Registered JWT Claims
+---------------------
+
+**iss (Issuer)**
+
+Identifies the principal that issued the JWT.
+
+**sub (Subject)**
+
+Identifies the principal that is the subject of the JWT.
+
+**aud (Audience)**
+
+Identifies the recipients that the JWT is intended for.
+
+**exp (Expiration Time)**
+
+Identifies the expiration time on or after which the JWT must not be accepted for processing.
+
+**nbf (Not Before)**
+
+Identifies the time before which the JWT must not be accepted for processing.
+
+**iat (Issued At)**
+
+Identifies the time at which the JWT was issued.
+
+**jti (JWT ID)**
+
+Provides a unique identifier for the JWT.
 _JWTs are a powerful tool in modern web development, especially for Single Sign-On (SSO) and stateless authentication scenarios. However, they should be used carefully and securely, ensuring that sensitive data isn't exposed and best practices are followed._
