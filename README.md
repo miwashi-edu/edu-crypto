@@ -67,9 +67,6 @@ console.log(`Token was issued at: ${issuedAtDate}`);
 console.log(`Token will expire at: ${expirationDate}`);
 ```
 
-
-  JWT Terms and Concepts
-
 JWT Terms and Concepts
 ----------------------
 
