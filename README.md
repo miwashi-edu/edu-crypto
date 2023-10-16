@@ -2,7 +2,7 @@
 
 ## Creating a Key for JWT signing Command Line
 
-> In gitbash or termina.
+> In gitbash or terminal
 
 ```bash
 node -e "console.log(require('crypto').randomBytes(256).toString('base64'));"
