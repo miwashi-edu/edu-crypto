@@ -1,6 +1,6 @@
 # edu-crypto
 
-## Creating a Key for JWT signing Command Line
+## Oneliner for Creating a Key for JWT
 
 > In gitbash or terminal
 
