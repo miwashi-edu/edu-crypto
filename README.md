@@ -1,5 +1,13 @@
 # edu-crypto
 
+## Creating a Key for JWT signing Command Line
+
+> In gitbash or termina.
+
+```bash
+node -e "console.log(require('crypto').randomBytes(256).toString('base64'));"
+```
+
 ## JWT (signing and verifying)
 
 ```mermaid
@@ -20,6 +28,8 @@ sequenceDiagram
 
     note over Frontend: Upon JWT expiration, request new JWT
 ```
+
+## JWT 
 
 ```js
 const crypto = require('crypto');
